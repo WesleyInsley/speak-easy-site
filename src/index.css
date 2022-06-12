@@ -1,5 +1,11 @@
+:root {
+  --main-bg-color: #FCF8ED;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  background-color: var(--main-bg-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

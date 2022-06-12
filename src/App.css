@@ -1,38 +1,170 @@
+:root {
+  --main-bg-color: #FCF8ED;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header Styling */
+
+header {
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+#logo-graphic {
+  width: 20vw;
+}
+
+#logo-text {
+  width: 30vw;
+}
+
+.logo-container p {
+  font-style: italic;
+}
+
+.menu-items {
+  margin: -5px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-items li {
+  padding: 5px;
+}
+
+.menu-items li a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* hero banner styling */
+
+#hero-banner-container {
+  background-color: blanchedalmond;
+  margin-bottom: -10px;
+  position: relative;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#hero-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#hero-banner-container h1 {
+  font-size: 200%;
+}
+
+#hero-banner {
+  width: 100vw;
+  object-fit: contain;
+}
+
+/* location styling */
+
+#location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#location img {
+  max-width: 100vw;
+  object-fit: contain;
+}
+
+.location-info {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#location p {
+  font-style: italic;
+  margin: 0px;
+}
+
+/* menu-items styling */
+
+#menu-items {
+  padding: 25px 0px 25px 0px;
+}
+
+#menu-items h2 {
+  text-transform: uppercase;
+}
+
+#menu-items h4 {
+  margin: 0px;
+}
+
+#menu-items p {
+  margin: 0px;
+}
+
+#menu-items-barfood {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+#menu-items-drinks {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.menu-items-container {
+  padding: 0px 15px 0px 15px;
+}
+
+.menu-items-container p {
+  font-style: italic;
+}
+
+/* footer styling */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+footer a {
+  color: white;
+  padding: 0px 15px 0px 15px;
+}
+
+#social-icon-container {
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer img {
+  width: 25vw;
 }
